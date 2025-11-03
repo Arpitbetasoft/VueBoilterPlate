@@ -4,16 +4,19 @@ import router from './router'
 
 //pinia
 import { createPinia } from 'pinia'
-import { createPersistedState } from 'pinia-plugin-persistedstate'
+  import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 const pinia=createPinia();
-pinia.use(createPersistedState)
+pinia.use(piniaPluginPersistedstate)
 
 // vue3-toastify
 import Vue3Toastify from 'vue3-toastify'
-import 'vue3-toastify/dist/index.js'
-
+import 'vue3-toastify/dist/index.css'
+import 'devextreme/dist/css/dx.material.blue.light.css'
 //vuetify
 import vuetify from './plugins/vuetify'
+
+//dxdata grid
+
 
 //vuex
 import  vuexStore  from './store/vuex'

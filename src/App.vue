@@ -1,8 +1,11 @@
-<script setup></script>
+<script setup>
+import HeaderComponent from './components/headerComponent.vue';
+
+</script>
 
 <template>
   <div>
-    <v-btn color="primary">Hello</v-btn>
+    <HeaderComponent/>
     <router-view></router-view>
   </div>
 </template>
